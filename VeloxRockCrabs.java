@@ -21,7 +21,7 @@ import static org.tribot.api.General.println;
 import static org.tribot.api.General.sleep;
 
 // To be in line for Version 0.20!
-@ScriptManifest(authors={"Dibes"}, category="Combat", name="Velox Premium v0.19", description="<h1 style='text-align:center;color:black;'>Velox Crabs v0.19</h1>" +
+@ScriptManifest(authors={"Dibes"}, category="Combat", name="Velox Crabs v0.19", description="<h1 style='text-align:center;color:black;'>Velox Crabs v0.19</h1>" +
         "<br> <h3 style='text-align:center'>This script is open source, and is not allowed to be used for resale</h3>")
 public class VeloxRockCrabs extends Script implements Painting {
 
@@ -34,7 +34,7 @@ public class VeloxRockCrabs extends Script implements Painting {
     private int startXpAtt, startXpStr, startXpDef, startXpRange, startXpMage, startXpHealth; //arrowId;
     private final Color color1 = new Color(255, 255, 255);
     private final Font font1 = new Font("Arial", Font.BOLD, 10);
-    private final Image img1 = getImage("http://i6.minus.com/ibrXlYTfqsYNdI.png");
+    private final Image img1 = getImage("http://i.imgur.com/sJQZLHl.png");
     private long startTime;
     public static Boolean foundTarget = false;
     public static RSNPC crab = null;
