@@ -16,13 +16,13 @@ import java.awt.event.ActionListener;
  */
 public class VeloxCrabsGUI implements Runnable {
 
-    public static JFrame GUIFrame = new JFrame();
     public static JList foodList;
     public static JSlider healthSlider;
     public static JLabel healthLabel;
     public static JCheckBox east;
     public static JCheckBox west;
     public static Boolean isGui = true;
+    public static JFrame GUIFrame;
 
     @Override
     public void run() {
@@ -30,7 +30,7 @@ public class VeloxCrabsGUI implements Runnable {
             @Override
             public void run() {
 
-                GUIFrame = new JFrame("Velox Crabs Premium " + VeloxRockCrabs.Version);
+                GUIFrame = new JFrame("Velox Crabs " + VeloxRockCrabs.Version);
 
                 // Creating the grid
                 JPanel meleePanel = new JPanel(null);

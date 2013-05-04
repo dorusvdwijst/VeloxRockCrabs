@@ -48,8 +48,8 @@ public class VeloxRockCrabs extends Script implements Painting {
     @Override
     public void run() {
 
-        Thread gui = new Thread(new VeloxCrabsGUI());
-        gui.start();
+        Thread GUIThread = new Thread(new VeloxCrabsGUI());
+        GUIThread.start();
 
         //Run GUI - Get foodId
         //Sleep for GUI
@@ -62,7 +62,7 @@ public class VeloxRockCrabs extends Script implements Painting {
             }
         }
 
-        gui.interrupt();
+        GUIThread.interrupt();
 
         startXpAtt = Skills.getXP("ATTACK");
         startXpStr = Skills.getXP("STRENGTH");
